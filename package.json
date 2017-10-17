@@ -1,0 +1,30 @@
+{
+  "name": "jsx2json",
+  "version": "1.0.0",
+  "description": "A JSX parser to converts to JSON",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava -s -v",
+    "test:dev": "ava -s -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stolksdorf/jsx2json.git"
+  },
+  "keywords": [
+    "jsx",
+    "json",
+    "parser",
+    "converter",
+    "react"
+  ],
+  "author": "stolksdorf",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stolksdorf/jsx2json/issues"
+  },
+  "homepage": "https://github.com/stolksdorf/jsx2json#readme",
+  "devDependencies": {
+    "ava": "^0.22.0"
+  }
+}
