@@ -1,6 +1,6 @@
 {
   "name": "jsx2json",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A JSX parser to converts to JSON",
   "main": "index.js",
   "scripts": {

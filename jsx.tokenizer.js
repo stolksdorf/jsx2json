@@ -28,7 +28,7 @@ module.exports = (input)=>{
 				if(char == '}') braceCount--;
 				code += char
 			}
-			return code.slice(0,-1);
+			return code.slice(0,-1).trim();
 		};
 
 		if(inTag){

@@ -13,3 +13,14 @@ test('handles injected function', (t)=>{
 	t.is(typeof res.props.onClick, 'function');
 	t.is(res.props.onClick(), 'success');
 });
+
+
+test('edge case', (t)=>{
+	const res = jsx2json(`<Tabs selected='tab2' onSelect={(key) => alert(key)} options={
+		{ unlimited : 'Unlimited', potential : 'Potential' }}>
+</Tabs>`, {useEval:true})
+
+	t.is(res.props.options.unlimited, 'Unlimited');
+	t.is(res.props.options.potential, 'Potential');
+
+})
