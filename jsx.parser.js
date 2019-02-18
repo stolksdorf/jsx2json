@@ -18,7 +18,9 @@ module.exports = (tokens, opts={})=>{
 				key = last;
 				last = null;
 			}else if(key && token.type == 'code'){
-				if(opts.useEval){
+				if (token.value.match(/^(?:tru|fals)e$/)) {
+					props[key] = token.value === 'true';
+				}else if(opts.useEval){
 					props[key] = eval(`(()=>{ return ${token.value}})()`);
 				}else{
 					props[key] = token.value;
